@@ -24,10 +24,10 @@ public sealed class DeleteLateralEntityCommandHandler
     {
         var entity = await _repository.GetByIdAsync(request.Id, cancellationToken);
 
-        _logger.LogInformation("LateralEntity {Id} created.", entity.Id);
-
         if (entity is null)
             throw new DomainException("LateralEntity not found.");
+
+        _logger.LogInformation("LateralEntity {Id} created.", entity.Id);
 
         await _repository.DeleteAsync(entity, cancellationToken);
     }
