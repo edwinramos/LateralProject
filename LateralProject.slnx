@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/LateralProject.Api/LateralProject.Api.csproj" />
+    <Project Path="src/LateralProject.Application/LateralProject.Application.csproj" />
+    <Project Path="src/LateralProject.Domain/LateralProject.Domain.csproj" />
+    <Project Path="src/LateralProject.Infrastructure/LateralProject.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/LateralProject.Application.UnitTests/LateralProject.Application.UnitTests.csproj" />
+    <Project Path="tests/LateralProject.IntegrationTests/LateralProject.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
